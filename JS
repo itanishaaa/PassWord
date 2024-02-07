@@ -1,0 +1,13 @@
+
+    const eyeIcon = document.getElementById("eye-icon");
+    const passwordInput = document.getElementById("p");
+
+    eyeIcon.addEventListener("click", function() {
+        if (passwordInput.type === "password") {
+            passwordInput.type = "text";
+            eyeIcon.src="eye-open.png";
+        } else {
+            passwordInput.type = "password";
+            eyeIcon.src="eye-close.png";
+        }
+    });
